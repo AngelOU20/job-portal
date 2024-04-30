@@ -1,9 +1,13 @@
-import "./App.css";
+import { Outlet } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import './styles/App.css';
 
 function App() {
   return (
     <>
-      <h1>Hello world!</h1>
+      <Navbar />
+      <Outlet />
+      {/* <Footer /> */}
     </>
   );
 }
