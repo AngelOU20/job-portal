@@ -7,7 +7,7 @@ interface BannerProps {
 
 export const Banner = ({ query, handleInputChange }: BannerProps) => {
   return (
-    <>
+    <div className="md:max-w-screen-2xl container mx-auto px-4 md:px-2 py-14 md:py-20">
       <h1 className="text-6xl text-primary font-bold mb-3">
         Find your <span className="text-secondary">new job</span> today
       </h1>
@@ -49,6 +49,6 @@ export const Banner = ({ query, handleInputChange }: BannerProps) => {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 };
